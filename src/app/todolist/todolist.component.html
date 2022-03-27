@@ -1,0 +1,3 @@
+<h1 *ngFor="let item of list">{{item.title}}</h1>
+
+<input  #newItem  (keyup.enter)="addItem(newItem.value); newItem.value = ''"   id="addItemInput" placeholder="add your first to do" /><input type="button" (click)="addItem(newItem.value)" value="add your todo ">
